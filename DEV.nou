@@ -1,0 +1,22 @@
+Tools
+  Sentence-wise splitting / formatting
+  Fast tagging of current character cue
+  Web-SaS tight integration
+    send current sentence into SaS to get all possible info on it
+    merge, refine and represent gotten info
+    ALT: coupling with T-Agg -> copy sentence -> hooked clipboard
+    TODO: try T-Agg under Wine
+  Backup
+    + through git-scripts
+
+
+File-chain
+**********
+  Fetch url -> Jap raws
+    don't adapt to other langs beforehand
+  ...
+  Fetch MTL -> dict raws
+  Combine in single dictionary db (sqlite?)
+    Choose and mark the most appropriate variant
+    Hide other variants until you find incongruency in future
+    OR eliminate them
