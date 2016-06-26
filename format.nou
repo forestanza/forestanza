@@ -1,4 +1,9 @@
-fb2
+%%%%% Static formats generators %%%%%
+
+%% xhtml
+  [_] Save precise scroll position -- relative to two nearest anchors
+
+%% fb2
   Tools
     https://github.com/IvanAnishchuk/fb2-vim
     https://github.com/lintest/fb2edit
@@ -8,5 +13,5 @@ fb2
     : xsl you can get from fb2 offsite
 
 
-epub
+%% epub
   http://web.sigil.googlecode.com/git/files/OEBPS/Text/tutorial_stylesheets.html

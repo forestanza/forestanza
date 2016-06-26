@@ -1,0 +1,5 @@
+%%%% Dict
+  [_] Populate lexics with kanji-drill from yarxi
+      NEED synchronized yarxi_u.db and samples.kdg
+
+%%%% Syntax
