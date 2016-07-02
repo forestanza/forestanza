@@ -1,0 +1,9 @@
+%%%% Index
+  cli
+  Qt
+  Web
+
+
+%% Structure
+  Allow other langs beside ???->eng for spanish/russian/etc translators
+  [_] master -- combine all parts as submodules

@@ -2,4 +2,11 @@
   [_] Populate lexics with kanji-drill from yarxi
       NEED synchronized yarxi_u.db and samples.kdg
 
+  [_] lexical base in submodule
+    forestanza-data.jap
+
+  [_] teach how to use git to merge lexical bases
+    * sort lexics to simplify merges
+    * clone lexics in their own forks -- and then generate pull requests
+
 %%%% Syntax
