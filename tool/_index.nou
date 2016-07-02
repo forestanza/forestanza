@@ -6,6 +6,7 @@ Tools
     merge, refine and represent gotten info
     ALT: coupling with T-Agg -> copy sentence -> hooked clipboard
     TODO: try T-Agg under Wine
+    [_] THINK?: Attach account from yarp for grammar parsing
   Backup
     + through git-scripts
   Syntax/gen

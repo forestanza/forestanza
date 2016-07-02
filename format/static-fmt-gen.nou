@@ -1,0 +1,47 @@
+%%%%% Static formats generators %%%%%
+
+%% fza (vim)
+
+%% xhtml + js
+
+% static gen
+
+  THINK? use xml2dict parser for forming page?
+    https://github.com/martinblech/xmltodict
+
+% DEV:(view)
+
+  [_] FIX: remove jap '[' ']' from TR table
+  [_] FIXME: angle brackets break format for xhtml and fb2
+
+% DEV:(js)
+
+  Scroll position
+    [X] FIXME keep scroll position on resize and browser restart
+    [_] Save precise scroll position -- relative to two nearest anchors
+      < If text wraps, then on resize relative position isn't correct
+    [_] FIXME: save indendent scroll position in local storage
+      * key scrollRelPos in localStorage is shared between all name-*.xhtml
+      * Therefore when loading new page it will jump to new old inherited position!
+    CHECK
+      [_] THINK: onresize and onbeforeunload -- enough to storePos()? But if crash...
+      [_] BUG: call for storePos(); inside onResize() don't work as expected
+        = It somehow saves new position after resize instead of old!
+        ? CHECK: Maybe window 'h' is updated before 'y'?
+
+
+%% fb2
+  Tools
+    https://github.com/IvanAnishchuk/fb2-vim
+    https://github.com/lintest/fb2edit
+    https://github.com/gonzoua/book-tools
+
+  Read fb2
+    * xsl you can get from fb2 offsite
+    $ zcat "$1"|xsltproc /usr/local/bin/data/FB2_2_xhtml.xsl -|lynx -stdin -display_charset=UTF-8
+
+
+%% epub
+  http://web.sigil.googlecode.com/git/files/OEBPS/Text/tutorial_stylesheets.html
+
+%% pdf / ps / latex

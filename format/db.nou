@@ -1,0 +1,69 @@
+%%%% DB %%%%
+
+Choose appropriate format for syntax/style db
+
+  [_] Document dict db/style formats in README
+  [_] Populate lexics with kanji-drill from yarxi
+      NEED synchronized yarxi_u.db and samples.kdg
+
+
+%%% Format
+
+  BETTER: plain CSV (+space before comma) -- each file -- own color
+
+  ALT: own format -- simplified yaml
+    NOTE: js -- use code snips from yaml parser
+    keys: ^\s*([a-z_]+\.?)+:\s*$
+      MAYBE use '.' for flattened nesting
+        object-like k1.k2.k3:
+        path-like k1/k2/k3:
+        THEN all next stuff until another key goes into last key
+          + no need to awfully control indent in 920 editor on android
+          + useful for long lists to find out hierarchy coords
+          + easy split/join throughout multiple files
+          - miswritten path parts -> disjointed hierarchy
+    single-line statement: \s*
+      origin, sound, tr1, tr2, ...
+    indent parsed only for keys
+    no mixed keys/statements on one level
+      all statements go to last key independently from indent
+
+
+%%% Container
+
+% sqlite
+
+  http://sqlite.org/lang.html
+  https://www.sqlite.org/cli.html
+
+  Reasons
+    better access time
+    compressed size
+    query
+    sqlite in js
+    easy to add attribute 'highlight' to db words
+    convertible to cvs to work in cli
+    ? THINK strategy to merge forked db?
+      http://www.codeproject.com/Articles/220018/SQLite-Compare-Utility
+      + there will be no need to teach `git`
+
+% plain text
+
+  Reasons
+    readability
+      ? is it reasonable for > 10000 words?
+    editability
+    distribution
+    vcs merging
+      - sort lexics to simplify merges
+      - teach how to use git to merge lexical bases
+      + clone lexics in their own forks
+      + generate pull requests
+    scripts/cli from the box
+    ? THINK how to unite db's for subtitution / highlighting
+    easy to split db in independent files
+      common / novel-related / personal / substitution / highlight
+
+% ALT mixed
+
+  plain distribution, cache in sqlite for program

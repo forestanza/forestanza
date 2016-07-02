@@ -1,5 +1,11 @@
 %%%%% Distribution
 
+%%%% Master
+  [_] combine all parts as submodules
+    [_] lexical base in submodule 'forestanza-data.jap'
+      Maybe better *-data.jp-ru ? What about such other TL directions?
+
+
 %%% Linux
 ~ Ideal would be python scripts, but they aren't great for cross-platforming
 

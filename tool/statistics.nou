@@ -1,0 +1,26 @@
+%%%%% Statistics %%%%%
+
+  Analyze raws
+    determine necessary new words
+      --> to add to db in batch manually before TL / reading raws
+    reduce TL tables (shorten view)
+      * show translation only under first 3 word entries
+      * ignore in all other places
+      === text space economy with prominent knowing language.
+
+  Converge statistics from separate words
+    crop by threshold >3 entries
+    filter frequent particles '-to'
+    filter list of already highlighted words
+      exclude both common and specific db
+
+    $ cat arifureta-130.otl | sed -rn '/\|\s*(\w+)\s*\|.*/s//\1/p' | sort -n | uniq -c | sort -n
+
+
+%% Highlighting
+
+  Choose set by threshold and highlight
+    * Highlight only most-used words in choosen colors to memorize them well
+    * hi! by gradations like pink/gray palette depending on frequency
+    * other words -- same as always
+    > This will allow to focus on most often used kanji to remember

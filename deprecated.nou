@@ -1,0 +1,24 @@
+%%%% DEPRECATED %%%%
+
+Project
+  [$] Split development in different orphan branches
+    > NOT much sense to link tightly all independent parts of project
+
+Lexics
+  USE cfg/*.yml for common and <ranobe>.yml or <ranobe>/*.yml for specific
+
+  IDEA: different processing, based on absolute paths?
+    E.g. -- treat group 'Characters' as whole words only (individual attributes for this group)
+    > No sense: as I could use patterns in fields. Firstly, accumulate some lexics.
+
+Style
+  [_] Split lexics and colorscheme.
+    [_] Treat whole key-path inside yml as identifier for group
+    [_] Inherit colors in colorschemes from parent level
+    [_] Override colors by direct path
+    [_] Set several color variations for term and gui/pdf
+
+  Export vim syntax highlighting to phone
+    hardcopy > ss.ps (no japanese) and then ps2pdf ss.ps
+    OR :TOhtml and then make epub?
+    > Now I work with .xhtml creation
