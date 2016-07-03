@@ -1,8 +1,133 @@
-%%%%% Translation utils (cmdline)
+%%%%% Translation tools
+  [_] Github -- grep 'japanese' -- learning lexics
+
+%%% Linux (cmdline)
   https://github.com/soimort/translate-shell
   http://pythonhosted.org/goslate/
   > https://github.com/Anoncheg1/Command-line-translator
+  http://search.cpan.org/~samv/Lingua-Translate-0.09/lib/Lingua/Translate.pm
+    aur/perl-lingua-translate 0.09-3 (5)
+    aur/perl-lingua-translate-google 0.22-2 (8)
 
-
-% Opensrc tools for jap
+%%% Opensrc tools for jap
   http://www.findbestopensource.com/tagged/japanese?start=10&fq=Windows
+  http://www.localizingjapan.com/blog/
+
+% raw VN catch-translate
+  https://kipchu.wordpress.com/2012/08/02/visual-novel-help-translation-tools-for-playing-untranslated-visual-novels/
+  http://scan-vn.blogspot.com/2014/01/introduction-agth-ith-capture2text-ta.html
+
+
+%%%% Services
+
+%% Dict
+  http://www.edrdg.org/jmdict/j_jmdict.html
+  http://www.edrdg.org/jmdictdb/cgi-bin/srchformq.py?svc=jmdict&sid=
+  Powerful and easy-to-use online Japanese dictionary with words, kanji and example sentences.
+    http://www.jardic.com/
+  https://code.google.com/archive/p/yarxi-pl/downloads
+  imiwa  # iOS, offline
+  Lingvo + БЯРС  # PC, offline
+
+%% Online dicts
+  Kanji, phrase -> ru
+    http://yarxi.ru
+
+%% Pop-up dicts
+    https://addons.opera.com/en/extensions/details/xtranslate/
+    https://addons.mozilla.org/en-US/firefox/addon/rikaichan-jpen/  # Firefox
+    Rikaikun  # Chrome
+
+%% Syntax / analyze
+  (python) Natural language processing
+    https://textblob.readthedocs.org/en/dev/
+  (lisp only?) experimental segmenting and romanization algorithms
+    https://github.com/tshatrov/ichiran
+    http://ichi.moe/
+  (python) Yet Another Japanese Dependency Structure Analyzer
+    http://shogo82148.github.io/blog/2012/11/01/cabocha/
+    aur/cabocha 0.69-1 (2)
+    aur/python-cabocha 0.69-1 (1)
+  (*) Yet another Japanese morphological analyzer
+    https://github.com/taku910/mecab
+    http://taku910.github.io/mecab/
+  Lexical analysis -> ru
+    http://www.yarp-online.ru
+    ! see how syntax could be visualized
+  = Other
+    https://plone.org/products/cjksplitter-chinese-japanese-korean-word-splitter-for-zctextindex
+    http://www.geocities.co.jp/SiliconValley-PaloAlto/7043/spamfilter/japanese-tokenizer.el.txt
+
+%% MTL
+  TODO: exctract used list from T-Agg
+  Promt, Babylon, Google
+  http://bab.la/
+  http://www.bing.com/translator/
+  http://yakusu.ru
+  http://www.multitran.ru
+    http://www.multitran.com
+  https://translate.yandex.ru/
+  http://www.urbandictionary.com/
+  Most popular
+    http://jisho.org/
+    It would be helpful if it'll be optimized for pure dictionary
+    Similar to what jisho does
+    Looking up root words and kanji meanings
+  MTL, but i find it more accurate than Google, free TL, special dicts
+    http://www.excite.co.jp/world/english_japanese/
+  another MTL, many langs, has custom dictionary option
+    http://www.systranet.com/translate
+  dictionary for onomatopoeia (jap sound effects)
+    http://thejadednetwork.com/sfx/
+  E>J/J>E dictionary with example sentences
+    http://ejje.weblio.jp/
+  another online dict
+    http://www.alc.co.jp/
+  online dict
+    http://tangorin.com/
+  more lookup
+    http://api.nihongoresources.com/
+  adds furigana
+    http://www.hiragana.jp/en/
+  JLPT grammar database
+    http://www.jgram.org/pages/viewList.php
+
+  MTL paragraph, full analysis, get words/defs/kanji
+    http://www.languagerealm.com/japanese/mainjp.php
+  kinda similar to ichi.moe, but more streamlined (to me) and provides option for kanji
+    https://nihongodera.com/tools/text-analyzer
+  Chinese: similar to ichi.moe, includes popup dictionary option (with Mandarin pinyin)
+    http://www.mdbg.net/chindict/chindict.php
+
+  Interesting, but no japanese translation
+    https://www.apertium.org/index.eng.html?dir=srp-eng#translation
+    http://www.wordreference.com/
+    http://www.thefreedictionary.com/
+  online mouse pop-up dictonary
+    http://www.popjisyo.com/WebHint/Portal_e.aspx
+
+% T-Agg
+Look jp-en: google, bing, honyaku, systran
+
+  http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/68499-translation-aggregator
+  http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/68499-translation-aggregator/page100#post4548026
+  See personal dict
+
+% Japtem Translate
+Chrome plugin, use for inputs
+  http://jt.japtem.com
+  + I liked it because you can copy raw+tl
+  + I can search it from start menu
+  ~ Have the same functions as tl-assist but it's really just preference
+  + It's quite buggy too, being alpha, but I believe @cat will update it soon
+  - tried it, gotta have google or something open to use it right
+  - all i see it really having is some TTS stuff, besides, tts on jp isn't 100%...
+  - and i don't need audio clues so much
+
+
+% Translation Assistant Tool (tl-assist 2.4)
+  http://joeglens.com/translation-assistant-tool/
+  - only used it for the progress bar
+  - wherein the Profile feature is equivalent to personal dicts
+  - it seems to seperate the jp from the translation
+  - such a nice little program, keeps everything organized

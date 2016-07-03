@@ -22,6 +22,7 @@
 %%% Android
   ? THINK do I really need provide editor tools for android ?
     How about tablets (they may be more comfortable than phone)
+    : Like choosing rough variant by touching word and then opening small sentence-wise editor for fine-edits.
   ? fork FBReader and adapt ?
 
   ALT: pack xhtml/js into Apache Cordova

@@ -1,6 +1,7 @@
 %%%%% cli %%%%%
 
   [_] Allow other langs beside ???->eng for spanish/russian/etc translators
+    Asap -- test at least for chinese -- tbl of definitions
   [_] FIX: when specifed direct --url to chapter w/o number -- need process chapter anyway
     = Currently it's not -- because loop won't run with chapters=[]
     http://stackoverflow.com/questions/15301147/python-argparse-default-value-or-specified-value

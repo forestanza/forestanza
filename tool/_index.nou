@@ -14,8 +14,12 @@ Tools
 
 File-chain
 **********
-  Fetch url -> Jap raws
+  Fetch url
+  Extract jap raws
     don't adapt to other langs beforehand
+  Split in sentences
+    ? also save formatting separately ?
+      paragraphs, NLs, cues, tables, etc...
   ...
   Fetch MTL -> dict raws
   Combine in single dictionary db (sqlite?)

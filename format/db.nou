@@ -5,6 +5,17 @@ Choose appropriate format for syntax/style db
   [_] Document dict db/style formats in README
   [_] Populate lexics with kanji-drill from yarxi
       NEED synchronized yarxi_u.db and samples.kdg
+  [_] Find resources where 'personal translator dicts' can be downloaded
+  [_] Support several dict sources
+    * multiple *db*
+    * custom dicts
+      * slang, personal, etc -- for katakana, onomatopoeia
+        # like nante, ja ne, etc
+        ! preprocessing before translating
+        # swap out kanji --> word itself (so online dict isn't confused)
+      * import/export CSV into *db*
+      * directly work with CSV w/o adding into *db*
+
 
 
 %%% Format

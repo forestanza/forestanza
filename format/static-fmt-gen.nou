@@ -16,6 +16,11 @@
 
 % DEV:(js)
 
+  Navigation
+    Overlay buttons
+      * fast jump till beg/endlast
+      * prev/next through jump history
+
   Scroll position
     [X] FIXME keep scroll position on resize and browser restart
     [_] Save precise scroll position -- relative to two nearest anchors

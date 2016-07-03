@@ -1,0 +1,136 @@
+%%%%% Common UI for all %%%%%
+
+%%%% General
+
+  Split raws by sentences
+  Allow to type translation directly below raws
+    * most TLers fine with either
+    ~ for preffering ones -- ensures that they wont skip lines
+    + useful for non-linear TL
+    = (option)
+      toggle split-screen / mixed sentences
+      disable TL sentences completely
+        + useful for typing TL in completely different program
+          # or even writing on paper, looking at phone
+        ! NEED ability to load TLed text back into combined project
+  Collect TLed sentences into one file
+  Re-apply formatting by paragraphs and cues
+  Proofread of the fragment: hide all/choosen raws/tled sentences
+
+
+%%% Raw
+  ? THINK underlining subject-object-verb?
+
+%%% TL Table
+
+%% Integration
+  * words could be clickable to launch translation directly from page
+  * whole sentence could be pasted to some resources like ichi.moe
+    # if default variant from google translator seems like crap.
+  * click wrd in tbl to save as preffered for dict and auto-replace in MTL sentence
+
+%% Too cluttered
+  Insert TR from *db* (if exists) in tbl as 1st variant in red color
+  Make variants list collapsable to first one
+    + button to expand [+] after word
+    ~ expand when 'click on that word' BUT it interferes with en tl-on-click
+
+%%% Backup
+
+  ! NEED backup-maker (however I feel like git/hg is much better anyways)
+  Save sentences as you type in fields (by timer), save each chapter
+  Multiversioning? Git is better anyways...
+
+
+%%%% Highlight
+
+As for colorizing itself which you may be mistaken as one following grammar rules -- it's not the case)
+Colors simply represent some manually grouped words -- like body parts, directions, sayings, etc
+It has nothing to do with syntax, but is rather helpful itself -- adhering to rule 'exclude word -> then all what left is syntax'
+However some syntax structs itself are highlighted by regexes -- therefore sometimes wrongly.
+
+  * Mark/Log wrongly higlighted entries (bad regexes / analyzing)
+    So then dev could review logged journal and fix regexes
+
+%%%% Modes
+
+  NEED view for fast mood-reading before TL and proof-reading after TL
+    ? folding all
+      + keep 4 separate views tracking:
+        unfolded, only jp, only prn, only tr
+        Filter
+          only un-TLed sentences -- for TL
+          only TLed -- for TLC
+      * Each view must keep its own custom folded/not list
+      * Button to reset view
+      * Keep relative in-page position
+    * allow editing TL'ed sentences w/o showing surrounding stuff on proof
+
+  Preview widget (sublime-like) on TL progress
+    Placed on the left narrow strip
+    Full height ~> complete chapter
+      green  | done
+      gray   | untouched
+      red    | bad
+      orange | conflict
+
+  Spell/syntax checker
+    Google Docs / MS Office
+    ? TRY LibreOffice, aspell, etc?
+    https://www.grammarly.com/
+    https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen
+
+  Annotation
+    Mark person of speech cue
+    Mark completed phase: TL, TLC, ED, PR
+      * range markings can be useful for editor
+      * embed openid of person ('Like'-feature)
+    Mark awkward lines and possible misTLs
+    Allow offering of alternative TLs -- to discuss between TLers
+    Leave notes to the editor
+
+  Re-generate epub with new chapter included
+    Include all acknowledgments for TLs
+    Source images from *pj* subdir
+    Include all previously TLed chapters from *pj* dir
+
+
+%%%% Collaboration
+
+%% Waterfall offline
+  Info exchange by annotation
+  API to upload/download files in shared folders
+
+%% Realtime online
+
+  Android version seems useful for collaborative TLing
+    = anyone who reads
+      + can suggest variant
+      + can see raw
+    * Able to centralize reading and gather sources from different blogs
+
+  Centrilized server
+    Lock sentence when starting editing/typing
+      Do nothing when simply focused
+    Unlock by timer
+      wait on notification from server
+      periodically check if tcp was lost and lock is already unlocked on server
+        if conflict -- show your unsynced text as 'alt' version
+        manually correct synced text (lock), upload (unlock), remove your 'alt' version
+
+  Personal preference
+    * centralized server shares only TLed sentences
+    ! what to show in their UI is specified by each TL individually
+      Like what show in tbl, what hide/show, preferred mode of UI, etc
+
+  NEED api for gdisk / way to publish
+    https://developers.google.com/drive/v3/web/about-sdk#create_and_open_files_using_the_google_picker
+    https://github.com/googledrive
+    ? MAYBE learning git/hg is better ?
+    ! NEED enhance interaction between tl, tlc, editors, etc
+    ~ Involve community on separate sentence  # collaborative TL
+      Mark/vote on sentence -- if correct TL
+
+  Automatically compose collaboratively TL'ed content into html pages to embed into blog
+    * of course, with nice text formatting
+    * NEED proof-reader for complete text after batch of tl/tlc (editors will do it?)
