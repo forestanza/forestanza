@@ -1,0 +1,47 @@
+%%%% Collaboration
+
+%% Waterfall offline
+  Info exchange by annotation
+  API to upload/download files in shared folders
+  + No need for server
+  > Exchange by project archive / sync only part of project
+    ? rsync / xcopy / gdrive-api ?
+
+%% Realtime online
+
+  Android version seems useful for collaborative TLing
+    = anyone who reads
+      + can suggest variant
+      + can see raw
+    * Able to centralize reading and gather sources from different blogs
+
+  Centrilized server
+    Lock sentence when starting editing/typing
+      Do nothing when simply focused
+    Unlock by timer
+      wait on notification from server
+      periodically check if tcp was lost and lock is already unlocked on server
+        if conflict -- show your unsynced text as 'alt' version
+        manually correct synced text (lock), upload (unlock), remove your 'alt' version
+
+  Personal preference
+    * centralized server shares only TLed sentences
+    ! what to show in their UI is specified by each TL individually
+      Like what show in tbl, what hide/show, preferred mode of UI, etc
+
+  NEED api for gdisk / way to publish
+    https://developers.google.com/drive/v3/web/about-sdk#create_and_open_files_using_the_google_picker
+    https://github.com/googledrive
+    ? MAYBE learning git/hg is better ?
+    ! NEED enhance interaction between tl, tlc, editors, etc
+    ~ Involve community on separate sentence  # collaborative TL
+      Mark/vote on sentence -- if correct TL
+
+  Automatically compose collaboratively TL'ed content into html pages to embed into blog
+    * of course, with nice text formatting
+    * NEED proof-reader for complete text after batch of tl/tlc (editors will do it?)
+
+  Cloud server -- to provide sync
+    https://doc.owncloud.org/server/9.0/admin_manual/configuration_files/external_storage/google.html
+    https://cloud.google.com/storage/
+    https://domains.google/
