@@ -1,5 +1,6 @@
 %%%%% cli %%%%%
 
+  [_] Loop through intervals 5 11..13 22 25 27-33 88-113
   [_] Allow other langs beside ???->eng for spanish/russian/etc translators
     Asap -- test at least for chinese -- tbl of definitions
   [_] FIX: when specifed direct --url to chapter w/o number -- need process chapter anyway

@@ -34,6 +34,10 @@
   Make variants list collapsable to first one
     + button to expand [+] after word
     ~ expand when 'click on that word' BUT it interferes with en tl-on-click
+  Place long tbl into frame with scrolling
+    tblH = screenH - (origin + phonet + trans)
+  Pressing on word in raws
+    scrolls in tbl frame and highlights (flashes) entry
 
 %%% Backup
 
