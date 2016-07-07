@@ -20,6 +20,10 @@
 
 %%% Raw
   ? THINK underlining subject-object-verb?
+  All loose hiragana/katakana -> highlighted. In different colors.
+  Groups (like body parts, etc)
+    Press on word from higlighted group -> open its translation in pop-up.
+    Press on word in pop-up -> open whole group in pop-up to see minuscule differences between them.
 
 %%% TL Table
 
