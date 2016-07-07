@@ -15,6 +15,8 @@
   [_] FIXME: angle brackets break format for xhtml and fb2
 
 % DEV:(js)
+  Wrap whole script in anonymous func to hide global vars
+    http://stackoverflow.com/questions/5786851/define-global-variable-in-a-javascript-function
 
   Navigation
     Overlay buttons
