@@ -26,3 +26,16 @@ File-chain
     Choose and mark the most appropriate variant
     Hide other variants until you find incongruency in future
     OR eliminate them
+
+
+%% Project struct
+  ? Align chapter number on :3d ?
+    OR determine <N> automatically?
+
+Subdir on chapter
+./<NM>/<num>/<NM>.*
+  Pack one chapter in archive from FM
+  Gather all 'ft'
+
+Subdir on ft
+./<NM>/<ft>/<num>.<ft>
