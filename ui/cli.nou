@@ -8,3 +8,7 @@
     http://stackoverflow.com/questions/15301147/python-argparse-default-value-or-specified-value
   [_] Python ~15MB app w/o code
     https://github.com/thp/pyotherside
+
+FIXME
+  [_] fix bugs found on re:zero
+  [_] deal with connection interruptions (don't freeze as now)
