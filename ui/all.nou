@@ -3,6 +3,7 @@
 %%%% General
 
   Split raws by sentences
+    Group together (don't split) short sentences
   Allow to type translation directly below raws
     * most TLers fine with either
     ~ for preffering ones -- ensures that they wont skip lines
@@ -42,6 +43,19 @@
     tblH = screenH - (origin + phonet + trans)
   Pressing on word in raws
     scrolls in tbl frame and highlights (flashes) entry
+  Clean up
+    Remove sequential repeat of the same word in tbl
+    Filter and split tbl if it contains embedded *,* (comma)
+  View
+    Bubble view
+      * up/down scrollbar
+      * show tbl only for curr sentence
+      + fast 'overview'
+    Book view
+      * one page -- one sentence
+      * scrollbar for tbl only
+      - no fast 'overview' navigation
+      + max concentration and minute work
 
 %%% Backup
 
