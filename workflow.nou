@@ -1,0 +1,79 @@
+%% Release
+
+  * all development in *master*
+  * NEED separate *release* branch
+    !_ NO /site/*
+    + AppVoyer (no in dev)
+    * merge all deps as subtree (manually or through 'subrepo')
+      works as sync/backup point between all deps
+    ! never merge back deps/docs into *master*
+    = tag after updating all deps and applying fixes
+  * NEED partial merge *master* -> *release*
+  > Even on release branch -- only tags are considered stable
+
+
+%% Work dir
+
+cmake
+  * nested ignore
+    replace by subtree when development cease
+      pull on master before each release
+  > clone in master|release: ./cmake
+
+doc/help/man
+  * completed (formatted) documentation
+  * source for posts
+  * periodically merged into *release*
+  > clone in release: ./doc
+  > clone in master: ./site/doc
+
+note/worklog
+  * source for additional posts
+  > clone in master: ./doc
+
+site
+  = has nested dirs
+  = no server-side jekyll generation
+  !_ never subtree / merge
+  (raws) gh-pages (ADD //.nojekyll)
+    >> squash frequently and keep only ~3 last working ver of site
+    (content) exclusive for site -- facade pages, review
+    == Output placed into ./build/site/* before applying jekyll
+      (doc) converted //*.md
+      (note) converted //*.nou
+      (master) generated doxygen
+    (external) template
+    -- TODO how-to videos from my youtube channel
+  > clone in master: ./site
+
+db/jap
+  !_ never subtree ? or squash on release ?
+    ~ Maybe keep last version as orphaned tag
+    ~ Or use orphan branch and squash on release
+  * load on demand
+  ? maybe not versioned ?
+    # wget from smwr
+  = can have nested clones
+    my own db
+    db from other users
+    dicts with incompatible licenses
+    ...
+    >> generate from them refined *db* for current WN
+  > clone in master: ./db
+
+mod/qt
+  >> No sense to separate -- doesn't work by itself.
+
+//.gitattribute
+  ./setup
+    * project layout per branch
+    * main copy/update scripts are inside ./scripts/
+  ./scripts/*
+    on merge -- ignored all irrelevant to *release*
+      BUT:HOW?
+  //.gitignore
+    /build/
+    /cmake/
+    /db/
+    /doc/
+    /site/
