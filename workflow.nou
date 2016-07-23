@@ -10,6 +10,8 @@
     = tag after updating all deps and applying fixes
   * NEED partial merge *master* -> *release*
   > Even on release branch -- only tags are considered stable
+  = in release there are no need for ./setup and ./scripts/
+    BUT how to compile project then?
 
 
 %% Work dir
