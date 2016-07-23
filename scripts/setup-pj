@@ -1,0 +1,19 @@
+#!/bin/bash -e
+cd "$(git rev-parse --show-toplevel)"
+
+[[ $FORK ]] || FORK='https://github.com/amerlyq'
+
+creds(){ ! hash 'r.git-my-repo' &>/dev/null || (cd "$1" && r.git-my-repo); }
+clone(){ if [[ ! -d $2 ]]; then mkdir -p "$2"; git clone "$@"; fi; creds "$2"; }
+orphan(){ clone "$FORK/forestanza" "$1" --single-branch -b "${3:-${1##*/}}"; }
+
+creds "$PWD"
+
+orphan doc -- note
+# orphan site/content
+# orphan site/doc
+orphan site/gh-pages
+
+clone "$FORK/forestanza-db" db
+clone "$FORK/aeternum-cmake-cross" cmake
+clone "$FORK/aeternum-jekyll-offline" site/template
