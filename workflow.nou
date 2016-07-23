@@ -13,6 +13,20 @@
   = in release there are no need for ./setup and ./scripts/
     BUT how to compile project then?
 
+Resolution
+  !!! no need for *release* branch at all
+  * tags are applied directly to *master*
+  * all deps are packed into main //*.tar.gz dist
+    * this consern is also applied to *db*
+    = copy only involved files (by CMake)
+    > so it will be complete src snapshot for build
+      : can be used for PKGBUILD as release to dld
+
+Site
+  ! mark each file with copyright
+  ! add copyright footnote
+  ! place notice about CC-* for contributors content  # Like in SO
+  SEE https://www.copyrightservice.co.uk/protect/p11_web_design_copyright
 
 %% Work dir
 
