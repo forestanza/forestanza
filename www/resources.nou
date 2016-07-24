@@ -64,10 +64,13 @@
   Promt, Babylon, Google
   http://bab.la/
   http://www.bing.com/translator/
+    ! http://www.microsoft.com/en-us/translator/translatorapi.aspx
   http://yakusu.ru
   http://www.multitran.ru
     http://www.multitran.com
   https://translate.yandex.ru/
+    ! https://tech.yandex.com/translate/doc/dg/concepts/design-requirements-docpage/
+    > https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
   http://www.urbandictionary.com/
   Most popular
     http://jisho.org/

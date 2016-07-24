@@ -19,14 +19,21 @@ Resolution
   * all deps are packed into main //*.tar.gz dist
     * this consern is also applied to *db*
     = copy only involved files (by CMake)
+    * generate manifest with all SHA1 involved in release
+    * dump all credentials to use by CMake instead of deriving them from git
     > so it will be complete src snapshot for build
       : can be used for PKGBUILD as release to dld
 
+
+%% Documentation
 Site
   ! mark each file with copyright
   ! add copyright footnote
   ! place notice about CC-* for contributors content  # Like in SO
   SEE https://www.copyrightservice.co.uk/protect/p11_web_design_copyright
+
+Mods
+  Add README.md in each mod dir -- to use as docs and to embed in site
 
 %% Work dir
 

@@ -30,6 +30,10 @@
     https://www.pubnub.com/blog/2014-10-22-how-to-convert-your-javascript-app-into-an-android-app-with-phonegap/
     http://stackoverflow.com/questions/13253547/can-i-write-an-app-in-javascript-html-css-and-sell-it-on-the-app-store-googles
 
+  Impl
+    http://stackoverflow.com/questions/11628238/wget-or-similar-for-android
+
 
 %%% MacOS
 ! Frozen until someone will be able to conduct testing
+  ? Maybe, AppVoyer is enough ?

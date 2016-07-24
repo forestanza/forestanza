@@ -2,3 +2,15 @@
 
   [_] FIXME: split line -- when url for GET must be less then 2000 characters
   2016-02-03 [X] TODO: continue line-by-line translation from last response onward
+
+
+Parse JSON
+  Parsers impl in diff languages
+    http://www.json.org/
+    C https://github.com/zserge/jsmn
+    C++
+      ++ https://github.com/nlohmann/json
+      + https://github.com/miloyip/rapidjson
+      ~ http://fossil.wanderinghorse.net/repos/nosjob/index.cgi/index
+      ? https://realtimelogic.com/products/json/  # works directly on TCP/IP stream
+    Qt http://doc.qt.io/qt-5/json.html

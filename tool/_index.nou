@@ -17,9 +17,12 @@ File-chain
   Fetch url
   Extract jap raws
     don't adapt to other langs beforehand
-  Split in sentences
-    ? also save formatting separately ?
+  Re-format
+    ? also save formatting separately to restore for tl ?
       paragraphs, NLs, cues, tables, etc...
+  Split in sentences
+  Convert table <-> list of single-line files
+    FIND: if *sqlite* util is able to do it natively
   ...
   Fetch MTL -> dict raws
   Combine in single dictionary db (sqlite?)
