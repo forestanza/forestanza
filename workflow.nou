@@ -17,12 +17,14 @@ Resolution
   !!! no need for *release* branch at all
   * tags are applied directly to *master*
   * all deps are packed into main //*.tar.gz dist
-    * this consern is also applied to *db*
+    * this concern is also applied to *db*
     = copy only involved files (by CMake)
     * generate manifest with all SHA1 involved in release
     * dump all credentials to use by CMake instead of deriving them from git
     > so it will be complete src snapshot for build
       : can be used for PKGBUILD as release to dld
+  -- BAD need to keep releases inside separate dir on my PC
+  -- BAD can't sync/ship releases easily (dep on github existence)
 
 
 %% Documentation

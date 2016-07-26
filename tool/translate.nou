@@ -3,6 +3,10 @@
   [_] FIXME: split line -- when url for GET must be less then 2000 characters
   2016-02-03 [X] TODO: continue line-by-line translation from last response onward
 
+Send REST
+  ++ https://whoshuu.github.io/cpr/
+    https://github.com/whoshuu/cpr
+  + https://github.com/JosephP91/curlcpp
 
 Parse JSON
   Parsers impl in diff languages
