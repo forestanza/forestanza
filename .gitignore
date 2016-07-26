@@ -1,5 +1,9 @@
 /build/
-/cmake/
-/db/
+###GEN###
 /doc/
-/site/
+/site/gh-pages/
+/db/
+/cmake/
+/site/template/
+/ext/cpr/
+/ext/json/
