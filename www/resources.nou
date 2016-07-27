@@ -1,5 +1,13 @@
 %%%%% Translation tools
-  [_] Github -- grep 'japanese' -- learning lexics
+  Github (grep)
+    [_] 'japanese' -- learning lexics
+    [_] 'online dict/translator' -- for ready-to-use recipes
+
+TODO:(review)
+  [_] http://mtlcorner.blogspot.com/p/want-to-machine-translate.html
+  japanese slang and proverbs to my own dictionary from here
+    http://www.languagerealm.com/japanese/mainjp.php
+  THINK: on press -- jump to something like japanese wiki
 
 %%% Linux (cmdline)
   https://github.com/soimort/translate-shell

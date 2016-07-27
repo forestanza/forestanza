@@ -25,6 +25,13 @@ File-chain
     FIND: if *sqlite* util is able to do it natively
   ...
   Fetch MTL -> dict raws
+    API
+      Form request
+      Send/get response
+      Parse response into universal
+    IMPL
+      online  (REST)
+      offline (HACK dll)
   Combine in single dictionary db (sqlite?)
     Choose and mark the most appropriate variant
     Hide other variants until you find incongruency in future
