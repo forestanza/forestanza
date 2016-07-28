@@ -18,3 +18,24 @@ Parse JSON
       ~ http://fossil.wanderinghorse.net/repos/nosjob/index.cgi/index
       ? https://realtimelogic.com/products/json/  # works directly on TCP/IP stream
     Qt http://doc.qt.io/qt-5/json.html
+
+% Format
+  Each *provider* provides list of available functions
+    sentence translation
+    sentence phonetics
+    furigana / words phonetics
+    words translation
+    words splitting
+  Retrieved data is placed into appropriate universal containers
+  Then choosen/all of them are combined into one *db*
+
+
+%%% API
+% Google
+  https://github.com/matheuss/google-translate-token
+    https://github.com/matheuss/google-translate-api
+    https://github.com/matheuss/vertaler
+  https://github.com/BenjaminDowns/google-translator  # see off api
+  https://github.com/thomashempel/AlfredGoogleTranslateWorkflow
+  https://github.com/mouuff/Google-Translate-API
+  ! https://github.com/soimort/translate-shell
