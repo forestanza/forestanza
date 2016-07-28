@@ -1,0 +1,22 @@
+#!/bin/bash
+
+distro(){ grep -isqF "$1" /etc/os-release /etc/lsb-release; }
+
+if distro arch; then
+  pacaur -S colout-git
+  # Linux
+  sudo pacman -S qt5-base
+  # Windows
+  sudo pacman -S mingw-w64-binutils mingw-w64-crt mingw-w64-gcc \
+      mingw-w64-headers mingw-w64-winpthreads \
+      mingw-w64-qt5-base mingw-w64-curl
+  # Testing
+  sudo pacman -S gtest mingw-w64-gtest
+  # Packaging
+  sudo pacman -S mingw-w64-nsis
+  # Env
+  sudo pacman -S lib32-libldap  # For wine-win32
+  # gst-plugins-base-libs lib32-gst-plugins-base-libs
+elif distro ubuntu; then
+  : # sudo apt-get install
+fi
