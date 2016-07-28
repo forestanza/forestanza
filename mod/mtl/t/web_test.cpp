@@ -21,3 +21,7 @@ TEST(mtl, bing) {
 TEST(mtl, google) {
     ASSERT_EQ(0, google(text, sl, tl));
 }
+
+TEST(mtl, yandex) {
+    ASSERT_EQ(0, yandex(text, sl, tl));
+}
