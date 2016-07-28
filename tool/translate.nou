@@ -8,6 +8,15 @@ Send REST
     https://github.com/whoshuu/cpr
   + https://github.com/JosephP91/curlcpp
 
+  Escaping
+    curl_easy_escape()
+  Futures
+        ```cpp
+    auto fr = cpr::GetAsync(...);
+    // fr.wait();
+    auto response = fr.get();
+    ```
+
 Parse JSON
   Parsers impl in diff languages
     http://www.json.org/
@@ -31,7 +40,7 @@ Parse JSON
 
 
 %%% API
-% Google
+%% Google
   https://github.com/matheuss/google-translate-token
     https://github.com/matheuss/google-translate-api
     https://github.com/matheuss/vertaler
@@ -39,3 +48,26 @@ Parse JSON
   https://github.com/thomashempel/AlfredGoogleTranslateWorkflow
   https://github.com/mouuff/Google-Translate-API
   ! https://github.com/soimort/translate-shell
+  + http://pythonhosted.org/goslate/
+
+REF
+  https://cloud.google.com/translate/v2/translating-text-with-rest
+    * complete url must be <2K chars
+    * default total limits of 2M chars/day and 10K chars per 100 seconds (~100 chars/second).
+      == NEED one worker per web tl service <-- monitor limits/timestamps and suspend/resume workers
+    * multiple q=... for multiple sentence
+      BUT how to derive &tk then?
+  !!! Usage rules
+    https://cloud.google.com/translate/v2/attribution
+
+  BAD:(web-tl) possible to open only in browser
+    $ r.b "https://translate.google.com/translate?hl=$hl&sl=$sl&tl=$tl&u=$uri"
+    # hl=en&tl=en&sl=jp&u=http://ncode.syosetu.com/n4399ci/8/
+
+  SNIP:(text -> bytearray)
+  $ echo "text" | hexdump -v -e'1/1 "%03u" " "'
+  # 104 101 108 108 111 010
+
+%%%% C++11
+  Regex
+    http://en.cppreference.com/w/cpp/regex/ecmascript
