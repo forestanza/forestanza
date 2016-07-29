@@ -98,8 +98,3 @@ REF
   CHECK: dict lookup
     "http://www.bing.com/translator/api/Dictionary/Lookup?"  \
         "from=" sl "&to=" tl "&text=" preprocess(text)
-
-
-%%%% C++11
-  Regex
-    http://en.cppreference.com/w/cpp/regex/ecmascript
