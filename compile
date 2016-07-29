@@ -1,0 +1,3 @@
+#!/bin/bash -e
+AUX=${0%/*}/cmake/scripts/linux
+exec $AUX/make-color -f cmake/Makefile APP=mtl "$@"
