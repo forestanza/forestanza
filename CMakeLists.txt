@@ -7,3 +7,4 @@ project(forestanza VERSION ${REPO_VERSION})
 include(pj-common)
 
 include(pj-flags)
+add_subdirectory(mod)
