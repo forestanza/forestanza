@@ -3,4 +3,6 @@
 
 #include <string>
 
+int apertium(std::string const& text, std::string const& sl, std::string const& tl);
+
 #endif // FORESTANZA_MTL_H
