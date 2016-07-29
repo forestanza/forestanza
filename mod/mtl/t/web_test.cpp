@@ -9,3 +9,7 @@ std::string const tl{"en"};
 TEST(mtl, apertium) {
     ASSERT_EQ(0, apertium("siempre que eres", "es", tl));
 }
+
+TEST(mtl, baidu) {
+    ASSERT_EQ(0, baidu(text, sl, tl));
+}
