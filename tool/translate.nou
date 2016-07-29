@@ -41,6 +41,12 @@ Parse JSON
 
 %%% API
 %% Google
+  !!! Usage rules
+    https://cloud.google.com/translate/v2/attribution
+    * default total limits of 2M chars/day and 10K chars per 100 seconds (~100 chars/second).
+      == NEED one worker per web tl service <-- monitor limits/timestamps and suspend/resume workers
+
+IMPL
   https://github.com/matheuss/google-translate-token
     https://github.com/matheuss/google-translate-api
     https://github.com/matheuss/vertaler
@@ -53,12 +59,8 @@ Parse JSON
 REF
   https://cloud.google.com/translate/v2/translating-text-with-rest
     * complete url must be <2K chars
-    * default total limits of 2M chars/day and 10K chars per 100 seconds (~100 chars/second).
-      == NEED one worker per web tl service <-- monitor limits/timestamps and suspend/resume workers
     * multiple q=... for multiple sentence
       BUT how to derive &tk then?
-  !!! Usage rules
-    https://cloud.google.com/translate/v2/attribution
 
   BAD:(web-tl) possible to open only in browser
     $ r.b "https://translate.google.com/translate?hl=$hl&sl=$sl&tl=$tl&u=$uri"
@@ -67,6 +69,36 @@ REF
   SNIP:(text -> bytearray)
   $ echo "text" | hexdump -v -e'1/1 "%03u" " "'
   # 104 101 108 108 111 010
+
+%% Yandex
+  !!! Usage rules
+    https://tech.yandex.com/translate/doc/dg/concepts/design-requirements-docpage/
+    * limit is 1M chars per day and 10M per month
+
+REF
+  https://translate.yandex.ru/
+    https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/
+
+  BAD:(jp) dict lookup  # The specified language is not supported
+   auto const kUrl = "http://translate.yandex.net/dicservice.json/lookup";
+   session.SetHeader({{"Host", "dictionary.yandex.net"},
+                     {"Connection", "close"},
+                     {"User-Agent", kAgent}});
+
+%% Bing
+  !!! Usage rules
+    https://www.microsoft.com/en-us/translator/attribution.aspx
+    * max throughput is 400K chars per hour or 2M/day (2M/month seems free)
+
+REF
+    https://msdn.microsoft.com/en-us/library/dd576287.aspx
+
+  CHECK: Web-url from cli
+    $ r.b "http://www.microsofttranslator.com/bv.aspx?from=$sl&to=$tl&a=$uri"
+  CHECK: dict lookup
+    "http://www.bing.com/translator/api/Dictionary/Lookup?"  \
+        "from=" sl "&to=" tl "&text=" preprocess(text)
+
 
 %%%% C++11
   Regex
