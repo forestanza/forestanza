@@ -13,3 +13,7 @@ TEST(mtl, apertium) {
 TEST(mtl, baidu) {
     ASSERT_EQ(0, baidu(text, sl, tl));
 }
+
+TEST(mtl, bing) {
+    ASSERT_EQ(0, bing(text, sl, tl));
+}
