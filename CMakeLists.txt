@@ -5,6 +5,7 @@ include(pj-init)
 project(forestanza VERSION ${REPO_VERSION})
 
 include(pj-common)
+add_subdirectory(ext)
 
 include(pj-flags)
 add_subdirectory(mod)
