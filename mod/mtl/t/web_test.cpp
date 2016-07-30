@@ -17,3 +17,7 @@ TEST(mtl, baidu) {
 TEST(mtl, bing) {
     ASSERT_EQ(0, bing(text, sl, tl));
 }
+
+TEST(mtl, google) {
+    ASSERT_EQ(0, google(text, sl, tl));
+}
