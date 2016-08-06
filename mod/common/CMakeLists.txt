@@ -1,3 +1,4 @@
-include(mod-tmpl)
+include(mod-pj)
+include(mod-all)
 
-set(COMMON_LIBRARIES common PARENT_SCOPE)
+set(COMMON_LIBRARIES ${LIB} PARENT_SCOPE)
