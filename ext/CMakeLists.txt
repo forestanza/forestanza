@@ -1,7 +1,15 @@
 # BUG: ignored
 # set(CMAKE_SUPPRESS_DEVELOPER_WARNINGS TRUE CACHE INTERNAL "")
 
-find_package(CURL REQUIRED)
+### curlcpp {{{1
+find_package(CURL "7.28.0" REQUIRED)
+include_directories(${CURL_INCLUDE_DIRS} curlcpp/include)
+add_subdirectory(curlcpp/src)
+set(CURLCPP_INCLUDE_DIRS ${CMAKE_CURRENT_SOURCE_DIR}/curlcpp/include PARENT_SCOPE)
+set(CURLCPP_LIBRARIES curlcpp PARENT_SCOPE)
+# ALT:(w/o find/include_dir)
+# set(curlcpp CACHE INTERNAL "")
+# add_subdirectory(curlcpp)
 
 ### cpr {{{1
 cmake_policy(PUSH)

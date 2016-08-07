@@ -32,6 +32,7 @@ clone "$FORK/aeternum-jekyll-offline" site/template
 
 ## External deps
 extern 'https://github.com/whoshuu/cpr'
+extern 'https://github.com/JosephP91/curlcpp'
 
 filedl 'nlohmann/json/develop/src/json.hpp' json
 # ALT:(release) https://github.com/nlohmann/json/releases/download/v2.0.1/json.hpp
