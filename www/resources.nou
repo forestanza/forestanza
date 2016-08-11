@@ -59,13 +59,19 @@ TODO:(review)
     aur/python-cabocha 0.69-1 (1)
   (*) Yet another Japanese morphological analyzer
     https://github.com/taku910/mecab
-    http://taku910.github.io/mecab/
+      http://taku910.github.io/mecab/
   Lexical analysis -> ru
     http://www.yarp-online.ru
     ! see how syntax could be visualized
   = Other
     https://plone.org/products/cjksplitter-chinese-japanese-korean-word-splitter-for-zctextindex
     http://www.geocities.co.jp/SiliconValley-PaloAlto/7043/spamfilter/japanese-tokenizer.el.txt
+  CJK text segmenting
+    http://stackoverflow.com/questions/5834371/is-there-any-good-open-source-or-freely-available-chinese-segmentation-algorithm
+    !! http://site.icu-project.org/
+      ! http://userguide.icu-project.org/boundaryanalysis
+      https://bugs.swift.org/browse/SR-1359
+    http://nlp.stanford.edu/software/segmenter.shtml
 
 %% MTL
   TODO: exctract used list from T-Agg
@@ -126,6 +132,8 @@ Look jp-en: google, bing, honyaku, systran
   http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/68499-translation-aggregator
   http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/68499-translation-aggregator/page100#post4548026
   See personal dict
+  http://www.hongfire.com/forum/forum/hentai-lair/hentai-game-discussion/tools-and-tutorials/68499-translation-aggregator/page107
+    See useful links in desc
 
 % Japtem Translate
 Chrome plugin, use for inputs
