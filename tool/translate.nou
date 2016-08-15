@@ -54,13 +54,18 @@ IMPL
   https://github.com/thomashempel/AlfredGoogleTranslateWorkflow
   https://github.com/mouuff/Google-Translate-API
   ! https://github.com/soimort/translate-shell
+    https://github.com/pawurb/termit
   + http://pythonhosted.org/goslate/
 
 REF
   https://cloud.google.com/translate/v2/translating-text-with-rest
     * complete url must be <2K chars
+      NOTE: this limit don't apply to 'application/x-www-form-urlencoded'
+      CHECK about 10k/100s limit
     * multiple q=... for multiple sentence
       BUT how to derive &tk then?
+      > Seems multirequest simply don't work
+    * frequent requests are banned (treated like robot crawling)
 
   BAD:(web-tl) possible to open only in browser
     $ r.b "https://translate.google.com/translate?hl=$hl&sl=$sl&tl=$tl&u=$uri"
