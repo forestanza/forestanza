@@ -52,6 +52,7 @@ Google::parse(string const& resp) const
     // 12 - (original) word classes and explanations
     // 13 - (original) examples
     // 14 - (original) see also
+    // at: [phrase, style, [[word_postproc, score, has_preceeding_space, attach_to_next_token]...]]
 
     std::cout << json_dom.dump(2) << std::endl;
     return json_dom.dump(2);
@@ -88,8 +89,8 @@ genTk(string const& text)
 
 
 // Request:(dt=..)
-// at | examples table
-// bd | ?
+// at | alternatives (examples) table
+// bd | ? browser detection
 // ex | ?
 // ld | language detection
 // md | ?
@@ -98,6 +99,14 @@ genTk(string const& text)
 // rw | ?
 // ss | ?
 // t  | translation + raw
+// Other:
+// dj=1 | annotate all fields
+// client= | {t,mt}:web, gtx:ext
+// source= | {btn,baf}:web, {input,ls}:ext
+// rom=1,srcrom=1 | additional romanization
+// ssel=3,tsel=6 | web: pressed lang buttons from list
+// ie=UTF-8,oe=UTF-8 | web: encoding
+// WTF: {"otf", "1"}, {"kc", "7"},
 
 string
 Google::prepare(string const& text) const
@@ -107,7 +116,6 @@ Google::prepare(string const& text) const
         {"dt", "t"},         {"dt", "rm"},      {"dt", "at"},
         {"sl", this->sl_},   {"tl", this->tl_}, {"hl", this->sl_},
         {"tk", genTk(text)}, {"q", text}};
-    // WTF: {client: "t"}, {"otf", "1"}, {"ssel", "0"}, {"tsel", "0"}, {"kc", "7"},
     // THINK: Make url (beside text and tk) fixed at the moment of instantiation
     return this->url_ + "?" + this->composeParams(params);
 }
