@@ -72,6 +72,12 @@ TODO:(review)
       ! http://userguide.icu-project.org/boundaryanalysis
       https://bugs.swift.org/browse/SR-1359
     http://nlp.stanford.edu/software/segmenter.shtml
+  Kanji -> translit
+    https://www.mankier.com/1/kakasi
+  Furigana
+    + https://github.com/sven-strothoff/vim-furigana
+      # Has python + mecab + kakasi
+    http://superuser.com/questions/474596/what-software-allows-editing-text-with-furigana-professionally
 
 %% MTL
   TODO: exctract used list from T-Agg
