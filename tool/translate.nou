@@ -78,7 +78,7 @@ REF
 %% Yandex
   !!! Usage rules
     https://tech.yandex.com/translate/doc/dg/concepts/design-requirements-docpage/
-    * limit is 1M chars per day and 10M per month
+    * limit is 1M chars per day and 10M per month (free API key)
 
 REF
   https://translate.yandex.ru/
@@ -91,6 +91,7 @@ REF
                      {"User-Agent", kAgent}});
 
 %% Bing
+#   == BabelFish (ja-en) https://www.babelfish.com
   !!! Usage rules
     https://www.microsoft.com/en-us/translator/attribution.aspx
     * max throughput is 400K chars per hour or 2M/day (2M/month seems free)
@@ -103,3 +104,6 @@ REF
   CHECK: dict lookup
     "http://www.bing.com/translator/api/Dictionary/Lookup?"  \
         "from=" sl "&to=" tl "&text=" preprocess(text)
+
+%% FreeSDL
+#   == Babylon (ja-en) http://translation.babylon-software.com
