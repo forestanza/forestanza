@@ -13,6 +13,13 @@
 
   [_] FIX: remove jap '[' ']' from TR table
   [_] FIXME: angle brackets break format for xhtml and fb2
+  BUG: arifureta c132..c135
+    [_] L374 wrong vertical order
+    [_] L399 missed words
+  [_] TODO: remove from *tbl* known words (from user personal dictionary)
+  [_] DEV: option: place *.css/js beside *.xhtml or embed inside
+  [_] SEE: copyq PKGBUILD
+  [_] Move *tbl* horiz pinning kanji column
 
 % DEV:(js)
   Wrap whole script in anonymous func to hide global vars
