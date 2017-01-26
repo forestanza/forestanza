@@ -3,6 +3,9 @@
     Add links to all involved sub-repos
     http://stackoverflow.com/questions/5296236/how-to-add-a-git-repo-as-a-submodule-of-itself-or-how-to-generate-github-page
 
+SEE
+  https://greenkeeper.io/#how-it-works
+
 %%% Releases
   https://help.github.com/articles/creating-releases/
 

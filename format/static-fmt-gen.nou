@@ -21,6 +21,10 @@
   [_] SEE: copyq PKGBUILD
   [_] Move *tbl* horiz pinning kanji column
 
+% DEV:(css)
+  [_] шлюзы для ресайза элементов при изменении размеров экрана
+    https://habrahabr.ru/company/mailru/blog/315196/
+
 % DEV:(js)
   Wrap whole script in anonymous func to hide global vars
     http://stackoverflow.com/questions/5786851/define-global-variable-in-a-javascript-function
