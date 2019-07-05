@@ -62,4 +62,19 @@
 %% epub
   http://web.sigil.googlecode.com/git/files/OEBPS/Text/tutorial_stylesheets.html
 
+  unpack
+    $ unzip myebook.epub
+  pack back growing recursive
+    $ zip -rX ../my.epub mimetype META-INF/ OEBPS/
+    = NOTE: instead of "OEBPS/" you can specify all other content
+  ALT: step by step
+    $ zip -X mynewebook.epub mimetype
+    $ zip -rg mynewebook.epub META-INF -x \*.DS_Store
+    $ zip -rg mynewebook.epub OEBPS -x \*.DS_Store
+  ALT:
+    $ zip -X0 "my.epub" "mimetype"
+    $ zip -Xr "my.epub" "META-INF/" "OEBPS/"
+  |aur/epub-tools|
+
+
 %% pdf / ps / latex
