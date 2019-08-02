@@ -1,4 +1,6 @@
 # forestanza
+orig. "stanza of the fore" -- the foremost strophe of utter importance
+
 Foreign texts reading and translation assistance toolset
 
 ## Distribution
