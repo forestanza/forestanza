@@ -1,0 +1,4 @@
+Repack epub
+  REF https://ebooks.stackexchange.com/questions/257/how-to-repack-an-epub-file-from-command-line
+  $ zip -X0 "my.epub" "mimetype"
+  $ zip -Xr "my.epub" "META-INF/" "OEBPS/"
