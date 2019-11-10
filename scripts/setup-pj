@@ -28,7 +28,6 @@ orphan site/gh-pages
 ## Own deps
 clone "$FORK/forestanza-db" db
 clone "$FORK/aeternum-cmake-cross" cmake
-clone "$FORK/aeternum-jekyll-offline" site/template
 
 ## External deps
 extern 'https://github.com/whoshuu/cpr'
